@@ -16,6 +16,16 @@ Invise is a [CefSharp](https://github.com/cefsharp/CefSharp/) based open source 
 - Clean WPF
 - MVVM
 
+## Architecture
+
+The project is structured using the Model-View-ViewModel (MVVM) architectural pattern, which is common in WPF applications. The main components include:
+
+- **ViewModels**: Classes such as `InviseBrowserViewModel`, `InviseProfilesViewModel`, and `BaseViewModel` that handle the logic and manage data for the UI.
+- **Models**: Classes like `InviseProfile`, `ProxySettings`, `WebRTCSettings`, `Fingerprint`, and `IpInfoResult` that represent the application data.
+- **Views**: XAML files like `InviseBrowserView.xaml` that define the UI.
+- **Services**: Classes providing functionalities and settings, including `Setting`, `DelegateCommand`, `RelayCommand`, and UI components such as `AutoStackPanel` and `AutoGrid`.
+- **Core**: Contains Chrome API related classes for handling requests, resources, lifespan settings, and models for configurations.
+- **Scripts**: JavaScript files like `fakeinject.js` that are injected into web pages.
 
 ## Features
 
@@ -36,11 +46,15 @@ Invise is a [CefSharp](https://github.com/cefsharp/CefSharp/) based open source 
 - Configuring Media devices
 - Other equally important features
 
-
 ## Compiling
 
 **Compile as AnyCpu or Download last stable version from [Releases](https://github.com/EugeneSunrise/Invise/releases)**
 
+## Project Details
+
+The application's settings are stored in `settings.json`, managed by the `Setting` class. Views are managed by the `ViewManager` class, while the `InviseBrowser` class is a custom web browser based on `ChromiumWebBrowser`.
+
+For more detailed information about project components and their responsibilities, please refer to the sections above.
 
 ## What will be added in the next updates?
 
@@ -49,7 +63,7 @@ Invise is a [CefSharp](https://github.com/cefsharp/CefSharp/) based open source 
 - Cookie Handler
 - Other opportunities for profile settings
 - Bookmarks
-- Chrome extenshions support
+- Chrome extensions support
 - Download option
 - Some optimization for profile history work
 - Add Mediator pattern
@@ -57,10 +71,10 @@ Invise is a [CefSharp](https://github.com/cefsharp/CefSharp/) based open source 
 
 ## Support the project financially
 
-TRX(Tron): TGztJ8FSwKNSrigESddGq6euHa9UgtkujG
+TRX(Tron): `TGztJ8FSwKNSrigESddGq6euHa9UgtkujG`
 
-BTC(Bitcoin): bc1q9ym4ac67x9c2slg64lq3u8wczdadj4tep7y2fw
+BTC(Bitcoin): `bc1q9ym4ac67x9c2slg64lq3u8wczdadj4tep7y2fw`
 
-ETH(Ethereum): 0xb9Fa2B5661238eC9D825bdb0379Db5b035179282
+ETH(Ethereum): `0xb9Fa2B5661238eC9D825bdb0379Db5b035179282`
 
 **Thanks to your support You can let me know which features You expect most to have the highest priority!**
