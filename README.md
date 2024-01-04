@@ -52,7 +52,7 @@ The project is structured using the Model-View-ViewModel (MVVM) architectural pa
 
 ## Project Details
 
-The application's settings are stored in `settings.json`, managed by the `Setting` class. Views are managed by the `ViewManager` class, while the `InviseBrowser` class is a custom web browser based on `ChromiumWebBrowser`.
+Views are managed by the `ViewManager` class, while the `InviseBrowser` class is a custom web browser based on `ChromiumWebBrowser`.
 
 For more detailed information about project components and their responsibilities, please refer to the sections above.
 
